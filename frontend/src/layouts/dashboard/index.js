@@ -34,6 +34,7 @@ import Simbologia from "layouts/dashboard/components/simbologia";
 
 import Datos from "layouts/dashboard/components/datos";
 import Tdatos from "layouts/dashboard/components/tdatos";
+import Calendario from "layouts/dashboard/components/calendario";
 
 function Dashboard() {
   const [view, setView] = useState(null); // null, "color", o "datos"
@@ -161,8 +162,9 @@ function Dashboard() {
           <Filtro />
         </Grid>
 
-        
-
+        <Grid item xs={12} md={6} lg={4}>
+          <Calendario />
+        </Grid>
 
         <Grid item xs={12} lg={8} mt={2}>
             <Card>
